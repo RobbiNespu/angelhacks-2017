@@ -51,6 +51,7 @@ class LoginScreen extends React.Component {
                 'Your username or password is incorrect. Register or try again',
                 [{ text: 'Dismiss Button' }] // Button
             )
+            console.log(err);
         } );
     }
     render() {

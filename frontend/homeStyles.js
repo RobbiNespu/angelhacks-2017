@@ -3,7 +3,8 @@ import { Dimensions, StyleSheet } from 'react-native';
 const win = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
-    //fontFamily: 'Avenir'
+    flex: 1,
+    backgroundColor: 'white'
   },
   infoContainer: {
     backgroundColor: 'white',
@@ -22,6 +23,42 @@ const styles = StyleSheet.create({
     position: 'relative',
     height: 250
   },
+  button: {
+    marginTop: 30,
+    display: 'flex',
+    alignItems: 'center',
+    width: win.width,
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginTop: 10,
+    marginLeft: 0,
+    backgroundColor: '#FFFFAC'
+  },
+  buttonOrange: {
+      display: 'flex',
+      alignItems: 'center',
+      width: win.width,
+      paddingTop: 15,
+      paddingBottom: 15,
+      marginTop: 10,
+      backgroundColor: '#FEB971'
+  },
+  buttonRed: {
+      borderRadius: 5,
+      display: 'flex',
+      alignItems: 'center',
+      width: win.width,
+      paddingTop: 15,
+      paddingBottom: 15,
+      marginTop: 10,
+      backgroundColor: '#CBFF85'
+  },
+  buttonLabel: {
+    textAlign: 'center',
+    fontSize: 20,
+    color: '#0C2F28',
+    fontWeight: 'bold'
+  },
   title: {
     fontSize: 25,
     width: win.width,
@@ -33,10 +70,12 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   welcome: {
-    fontSize: 30,
+    backgroundColor: 'white',
     width: win.width,
-    height: 300,
-    color: '#479F00',
+    fontSize: 30,
+    padding: 10,
+    width: win.width,
+    color: '#11493E',
     textAlign: 'center',
     fontWeight: 'bold'
   }

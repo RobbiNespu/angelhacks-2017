@@ -20,9 +20,6 @@ const items = [
 ];
 
 class RestaurantPreview extends React.Component {
-	static navigationOptions = {
-    title: 'Restaurants'
-  };
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -60,10 +57,10 @@ class RestaurantPreview extends React.Component {
 		else{
 		return (
 			<ScrollView>
-			<Button title="View Map" onPress={() => this.props.navigation.navigate('Map')} />
 			<Text style={[styles.welcome, {fontFamily: 'Avenir'}]}>Welcome {this.props.navigation.state.params.firstName} :)</Text>
+			<TouchableOpacity onPress={() => this.props.navigation.navigate('Map')} ><View style={styles.button}><Text>View Map</Text></View></TouchableOpacity>
 			<TouchableOpacity onPress={() => this.props.navigation.navigate('UserProfile', {user: this.props.navigation.state.params.user})}>
-				<Text style={{fontFamily: 'Avenir'}}>{this.props.navigation.state.params.firstName}'s profile </Text>
+				<View style={styles.buttonRed}><Text style={{fontFamily: 'Avenir'}}>{this.props.navigation.state.params.firstName}'s profile </Text></View>
 			</TouchableOpacity>
        {this.state.foodProviders && this.state.foodProviders.map((provider, index) => {
          return <View key={index} style={styles.container}>
