@@ -3,7 +3,7 @@ import { Dimensions, StyleSheet } from 'react-native';
 const win = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'Avenir',
+    //fontFamily: 'Avenir',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'stretch',

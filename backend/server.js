@@ -21,6 +21,7 @@ authenticationHelper(app);
 
 app.use('/', routes);
 
-server.listen(3000, () => {
+
+server.listen(process.env.PORT, () => {
     console.log('Server listening on port 3000!');
 });

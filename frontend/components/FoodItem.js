@@ -19,7 +19,7 @@ class FoodItem extends React.Component {
 
   render() {
     return (
-      <View style={styles.foodItem, {fontFamily: 'Avenir'}}>
+      <View style={styles.foodItem}>
         <View style={styles.foodInfo}>
           <Text style={styles.item}>{this.props.name}</Text>
           {this.props.quantity === '0'? null : <Text style={styles.quantity}>Quantity: {this.props.quantity} {this.props.unit}</Text>}

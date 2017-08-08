@@ -8,8 +8,7 @@ import {
   Modal,
   Alert,
   Button,
-  Dimensions,
-  Alert
+  Dimensions
 } from 'react-native';
 import styles from '../addItemStyles.js';
 import axios from 'axios';

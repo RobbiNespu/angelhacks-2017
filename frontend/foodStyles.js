@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   foodItem: {
     width: win.width,
-    height: 100,
+    height: 140,
     borderBottomWidth: 0.5,
     borderBottomColor: '#F2F876',
     backgroundColor: '#FFFFFF'

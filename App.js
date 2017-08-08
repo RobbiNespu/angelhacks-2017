@@ -14,6 +14,8 @@ import Ticket from './frontend/containers/Ticket';
 import AddItem from './frontend/containers/AddItem';
 import UserProfile from './frontend/containers/UserProfile';
 
+global.___DEV___ = false
+
 export default StackNavigator({
   Login: {
     screen: LoginScreen
